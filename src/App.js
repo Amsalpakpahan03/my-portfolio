@@ -9,7 +9,7 @@ function App() {
   // ========== STATE DEFINISI (URUTAN PENTING) ==========
 
   // State untuk Role Teks Berganti
-  const roles = ["BACK END DEVELOPER", "PHOTOGRAPHER FREELANCE","GRAPHIC DESIGNER FREELANCE"];
+  const roles = ["JUNIOR BACK END DEVELOPER", "PHOTOGRAPHER FREELANCE","GRAPHIC DESIGNER FREELANCE"];
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [formData, setFormData] = useState({
