@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import profilePhoto from './profile.png';
 import profile from './20231213123938_DSCF6616.JPG';
-import { FaInstagram, FaEnvelope, FaGithub, FaTwitter, FaFacebookF, FaYoutube, FaLinkedinIn, FaBars, FaTimes } from 'react-icons/fa';
+import { FaInstagram, FaEnvelope, FaGithub, FaBars, FaTimes } from 'react-icons/fa';
 
 function App() {
 
