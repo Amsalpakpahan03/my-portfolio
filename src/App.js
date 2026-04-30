@@ -60,9 +60,7 @@ function App() {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-  };
+
 
   const handleChange = (e) => {
     setFormData({
