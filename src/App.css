@@ -2357,3 +2357,72 @@ body {
     transform: translateY(-20px);
   }
 }
+
+/* Mobile - Home section full screen */
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: calc(100vh - 65px) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  
+  .hero-image-container {
+    order: 1;
+    margin-bottom: 10px !important;
+  }
+  
+  .main-photo {
+    max-width: 200px !important;
+  }
+  
+  .hero-content {
+    order: 2;
+    padding: 0 !important;
+  }
+  
+  .name-title {
+    font-size: 32px !important;
+    margin-bottom: 8px !important;
+  }
+  
+  .role-container {
+    min-height: 50px !important;
+    margin: 5px 0 !important;
+  }
+  
+  .role-title {
+    font-size: 18px !important;
+  }
+  
+  .social-group {
+    margin-top: 10px !important;
+    gap: 1.5rem !important;
+  }
+}
+/* Lingkaran dekorasi di home section */
+.hero-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.circle-decoration {
+  position: absolute;
+  top: -60px;
+  left: -60px;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(255,184,77,0.2) 0%, rgba(255,184,77,0) 70%);
+  border-radius: 50%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Biar konten di atas lingkaran */
+.hero-content, .hero-image-container {
+  position: relative;
+  z-index: 1;
+}
