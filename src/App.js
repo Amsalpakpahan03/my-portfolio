@@ -33,9 +33,9 @@ function App() {
   // Data foto untuk carousel photography
   const photoSlides = [
     { src: '/photos/KSM02528.JPG', title: 'Portrait Session' },
-    { src: '/photos/ALD07542.JPG', title: 'Street Photography' },
+    { src: '/photos/ALD07542.JPG', title: 'Event Documentation' },
     { src: '/photos/TNC06520.JPG', title: 'Event Documentation' },
-    { src: '/photos/KSM02695.JPG', title: 'Event Documentation' }
+    { src: '/photos/KSM02695.JPG', title: 'Portrait Session' }
   ];
 
   // Data foto untuk carousel design
