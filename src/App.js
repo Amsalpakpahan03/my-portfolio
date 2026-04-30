@@ -9,7 +9,7 @@ function App() {
   // ========== STATE DEFINISI (URUTAN PENTING) ==========
 
   // State untuk Role Teks Berganti
-  const roles = ["BACK END DEVELOPER", "PHOTOGRAPHER FREELANCE"];
+  const roles = ["BACK END DEVELOPER", "PHOTOGRAPHER FREELANCE","GRAPHIC DESIGNER FREELANCE"];
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [formData, setFormData] = useState({
@@ -352,9 +352,9 @@ function App() {
               </div>
               <div className="photo-col landscape-stack">
                 <div className="photo-item-masonry" onClick={() => openModal('/photos/ALD07542.JPG')}>
-                  <img src="/photos/ALD07542.JPG" alt="Street Photography" />
+                  <img src="/photos/ALD07542.JPG" alt="Event Documentation" />
                   <div className="photo-overlay">
-                    <span>Street Photography</span>
+                    <span>Event Documentation</span>
                   </div>
                 </div>
                 <div className="photo-item-masonry" onClick={() => openModal('/photos/TNC06520.JPG')}>
@@ -366,9 +366,9 @@ function App() {
               </div>
               <div className="photo-col portrait">
                 <div className="photo-item-masonry" onClick={() => openModal('/photos/KSM02695.JPG')}>
-                  <img src="/photos/KSM02695.JPG" alt="Event Documentation" />
+                  <img src="/photos/KSM02695.JPG" alt="Portrait Session" />
                   <div className="photo-overlay">
-                    <span>Event Documentation</span>
+                    <span>Portrait Session</span>
                   </div>
                 </div>
               </div>

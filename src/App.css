@@ -18,6 +18,31 @@ body {
   padding-top: 80px;
 }
 
+/* FORCE FIX - HOME SECTION MOBILE */
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: auto !important;
+    padding-top: 10px !important;
+    padding-bottom: 20px !important;
+    margin-top: 0 !important;
+  }
+  
+  .hero-image-container {
+    margin-bottom: 0 !important;
+  }
+  
+  .hero-content {
+    padding-bottom: 0 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding-top: 5px !important;
+    padding-bottom: 15px !important;
+  }
+}
+
 /* NAVBAR TRANSPARAN - NAVIGASI DI TENGAH */
 .navbar {
   position: fixed;
@@ -92,22 +117,137 @@ body {
   margin: 0 auto;
   padding: 0 5%;
 }
+/* ========== HERO SECTION - DESKTOP & MOBILE ========== */
 
-/* HERO SECTION */
 .hero-section {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
   gap: 2rem;
   padding: 40px 0 0 0;
-  min-height: calc(100vh - 80px);
 }
 
 .hero-content {
   flex: 1.5;
-  padding-bottom: 80px;
+  padding-bottom: 0;
 }
 
+/* Desktop */
+@media (min-width: 769px) {
+  .hero-section {
+    min-height: calc(100vh - 80px);
+    align-items: flex-end;
+  }
+  
+  .hero-content {
+    padding-bottom: 80px;
+  }
+}
+
+/* Mobile - Konten di tengah, tidak terlalu ke bawah */
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: auto;
+    padding: 20px 0 40px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .hero-content {
+    order: 2;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .hero-image-container {
+    order: 1;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+  
+  .main-photo {
+    max-width: 240px;
+    width: 70%;
+  }
+  
+  .name-title {
+    font-size: 32px;
+    white-space: normal;
+    margin-bottom: 8px;
+  }
+  
+  .role-container {
+    justify-content: center;
+    height: auto;
+    min-height: 50px;
+    margin: 5px 0;
+  }
+  
+  .role-title {
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .social-group {
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 24px;
+    margin-top: 10px;
+  }
+}
+
+/* Layar sangat kecil */
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 15px 0 30px 0;
+  }
+  
+  .main-photo {
+    max-width: 200px;
+  }
+  
+  .name-title {
+    font-size: 28px;
+  }
+  
+  .role-title {
+    font-size: 16px;
+  }
+  
+  .social-group {
+    gap: 1.2rem;
+    font-size: 22px;
+  }
+}
+
+/* Tambahkan min-height hanya untuk desktop */
+@media (min-width: 769px) {
+  .hero-section {
+    min-height: calc(100vh - 80px);
+  }
+}
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: auto;
+    padding: 40px 0 40px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .hero-content {
+    order: 2;
+    padding: 0;
+  }
+  
+  .hero-image-container {
+    order: 1;
+  }
+}
 .name-title {
   font-size: clamp(36px, 6vw, 62px);
   font-weight: 900;
@@ -2207,170 +2347,13 @@ body {
   }
 }
 
-/* ========== PERBAIKAN HOME SECTION MOBILE ========== */
-
-@media (max-width: 768px) {
-  /* Hero Section - Mobile */
-  .hero-section {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 40px 0 50px 0;
-    gap: 1.5rem;
-    min-height: auto;
-  }
-
-  .hero-content {
-    order: 2;
-    padding-bottom: 0;
-    width: 100%;
-  }
-
-  .hero-image-container {
-    order: 1;
-    justify-content: center;
-    margin-bottom: 10px;
-  }
-
-  /* Foto lebih besar di mobile */
-  .main-photo {
-    max-width: 320px;
-    width: 80%;
-  }
-
-  /* Nama lebih besar */
-  .name-title {
-    font-size: 36px;
-    white-space: normal;
-    word-wrap: break-word;
-    margin-bottom: 15px;
-  }
-
-  /* Role container lebih lega */
-  .role-container {
-    justify-content: center;
-    height: auto;
-    min-height: 70px;
-    margin: 10px 0 20px;
-  }
-
-  /* Role title lebih besar */
-  .role-title {
-    font-size: 20px;
-    text-align: center;
-  }
-
-  /* Social icon lebih besar */
-  .social-group {
-    justify-content: center;
-    gap: 2rem;
-    font-size: 28px;
-    margin-top: 10px;
-  }
-}
-
-/* Untuk layar sangat kecil (480px kebawah) */
-@media (max-width: 480px) {
-  .main-photo {
-    max-width: 280px;
-    width: 85%;
-  }
-
-  .name-title {
-    font-size: 32px;
-  }
-
-  .role-title {
-    font-size: 18px;
-  }
-
-  .social-group {
-    gap: 1.8rem;
-    font-size: 26px;
-  }
-}
-
-/* Untuk layar 375px (iPhone SE, Galaxy kecil) */
-@media (max-width: 375px) {
-  .main-photo {
-    max-width: 250px;
-  }
-
-  .name-title {
-    font-size: 28px;
-  }
-
-  .role-title {
-    font-size: 16px;
-  }
-
-  .social-group {
-    gap: 1.5rem;
-    font-size: 24px;
-  }
+/* FIX: Posisi home section lebih ke atas */
+.hero-section {
+  padding-top: 0 !important;
 }
 
 @media (max-width: 768px) {
-  /* Ganti min-height: calc(100vh - 80px) menjadi auto */
   .hero-section {
-    min-height: auto;
-    padding: 20px 0 30px 0;
-  }
-}
-/* ========== KHUSUS UNTUK LAYAR TINGGI (720x1640 dll) ========== */
-
-/* Untuk HP dengan rasio layar tinggi */
-@media (max-width: 768px) and (min-aspect-ratio: 1/2) {
-  /* Hero section - lebih proporsional */
-  .hero-section {
-    min-height: auto;
-    padding: 20px 0 30px 0;
-  }
-  
-  /* Foto lebih besar */
-  .main-photo {
-    max-width: 280px;
-    margin: 0 auto;
-  }
-  
-  /* Nama tetap besar */
-  .name-title {
-    font-size: 34px;
-    margin-top: 10px;
-  }
-  
-  /* Role container cukup */
-  .role-container {
-    min-height: 50px;
-    margin: 5px 0 15px;
-  }
-  
-  /* Konten home tidak terlalu panjang */
-  .hero-content {
-    padding-bottom: 20px;
-  }
-}
-
-/* Khusus untuk HP dengan resolusi 720x1640 */
-@media (max-width: 720px) and (min-height: 1500px) {
-  .hero-section {
-    min-height: auto;
-    padding: 15px 0 25px 0;
-  }
-  
-  .main-photo {
-    max-width: 260px;
-  }
-  
-  .name-title {
-    font-size: 32px;
-  }
-  
-  .role-title {
-    font-size: 18px;
-  }
-  
-  .social-group {
-    margin-bottom: 10px;
+    transform: translateY(-20px);
   }
 }
