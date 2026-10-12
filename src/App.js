@@ -72,7 +72,7 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const { name, email, subject, message } = formData;
-    const mailtoLink = `mailto:pakpahanamsal1@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+    const mailtoLink = `mailto:pakpahanamsal@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
     window.location.href = mailtoLink;
     setFormData({
       name: '',
@@ -222,7 +222,7 @@ function App() {
           <div className="social-group">
             <div className="social-group">
               <a href="https://www.instagram.com/amsal_paruhum?igsh=MW5lN25rbjA2NWVtMA==" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-              <a href="mailto:pakpahanamsal1@gmail.com"><FaEnvelope /></a>
+              <a href="mailto:pakpahanamsal@gmail.com"><FaEnvelope /></a>
               <a href="https://github.com/Amsalpakpahan03" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
             </div>
           </div>
@@ -487,65 +487,106 @@ function App() {
             </div>
           )}
           {/* Web Development Projects */}
-          <h3 className="project-category">Web Development</h3>
-          <div className="project-web-grid">
-            <div className="project-web-card">
-              <div className="web-card-icon">
-                <img
-                  src="https://www.google.com/s2/favicons?domain=cakraexport.com&sz=64"
-                  alt="Cakra Export"
-                  onError={(e) => { e.target.onerror = null; e.target.src = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ffb84d"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>' }}
-                />
-              </div>
-              <div className="web-card-content">
-                <h3>Cakra Export</h3>
-                <div className="web-tech-stack">
-                </div>
-                <p className="web-description">Company profile website for export business.</p>
-                <a href="https://cakraexport.com" target="_blank" rel="noopener noreferrer" className="web-link">
-                  View Project <span>→</span>
-                </a>
-              </div>
-            </div>
+          {/* Web Development Projects */}
+<h3 className="project-category">Web Development</h3>
+<div className="project-web-grid">
+  <div className="project-web-card">
+    <div className="web-card-icon">
+      <img
+        src="https://www.google.com/s2/favicons?domain=cakraexport.com&sz=64"
+        alt="Cakra Export"
+        onError={(e) => { e.target.onerror = null; e.target.src = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ffb84d"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>' }}
+      />
+    </div>
+    <div className="web-card-content">
+      <h3>Cakra Export</h3>
+      <div className="web-tech-stack">
+      </div>
+      <p className="web-description">Company profile website for export business.</p>
+      <a href="https://cakraexport.com" target="_blank" rel="noopener noreferrer" className="web-link">
+        View Project <span>→</span>
+      </a>
+    </div>
+  </div>
 
-            <div className="project-web-card">
-              <div className="web-card-icon">
-                <img
-                  src="https://www.google.com/s2/favicons?domain=mathetes.sch.id&sz=64"
-                  alt="Sekolah Mathetes"
-                  onError={(e) => { e.target.onerror = null; e.target.src = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ffb84d"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>' }}
-                />
-              </div>
-              <div className="web-card-content">
-                <h3>Mathetes School</h3>
-                <div className="web-tech-stack">
-                </div>
-                <p className="web-description">School website for academic information and student resources.</p>
-                <a href="https://mathetes.sch.id" target="_blank" rel="noopener noreferrer" className="web-link">
-                  View Project <span>→</span>
-                </a>
-              </div>
-            </div>
+  <div className="project-web-card">
+    <div className="web-card-icon">
+      <img
+        src="https://www.google.com/s2/favicons?domain=mathetes.sch.id&sz=64"
+        alt="Sekolah Mathetes"
+        onError={(e) => { e.target.onerror = null; e.target.src = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ffb84d"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>' }}
+      />
+    </div>
+    <div className="web-card-content">
+      <h3>Mathetes School</h3>
+      <div className="web-tech-stack">
+      </div>
+      <p className="web-description">School website for academic information and student resources.</p>
+      <a href="https://mathetes.sch.id" target="_blank" rel="noopener noreferrer" className="web-link">
+        View Project <span>→</span>
+      </a>
+    </div>
+  </div>
 
-            <div className="project-web-card">
-              <div className="web-card-icon">
-                <img
-                  src="https://www.google.com/s2/favicons?domain=detic.id&sz=64"
-                  alt="Detic.id"
-                  onError={(e) => { e.target.onerror = null; e.target.src = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ffb84d"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>' }}
-                />
-              </div>
-              <div className="web-card-content">
-                <h3>Detic.id</h3>
-                <div className="web-tech-stack">
-                </div>
-                <p className="web-description">Local concert ticketing system with payment integration.</p>
-                <a href="https://detic.id" target="_blank" rel="noopener noreferrer" className="web-link">
-                  View Project <span>→</span>
-                </a>
-              </div>
-            </div>
-          </div>
+  <div className="project-web-card">
+    <div className="web-card-icon">
+      <img
+        src="https://www.google.com/s2/favicons?domain=detic.id&sz=64"
+        alt="Detic.id"
+        onError={(e) => { e.target.onerror = null; e.target.src = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ffb84d"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>' }}
+      />
+    </div>
+    <div className="web-card-content">
+      <h3>Detic.id</h3>
+      <div className="web-tech-stack">
+      </div>
+      <p className="web-description">Local concert ticketing system with payment integration.</p>
+      <a href="https://detic.id" target="_blank" rel="noopener noreferrer" className="web-link">
+        View Project <span>→</span>
+      </a>
+    </div>
+  </div>
+
+  {/* Tambahan: Suryamas Jaya Internasional */}
+  <div className="project-web-card">
+    <div className="web-card-icon">
+      <img
+        src="https://www.google.com/s2/favicons?domain=suryamasjayainternasional.com&sz=64"
+        alt="Suryamas Jaya Internasional"
+        onError={(e) => { e.target.onerror = null; e.target.src = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ffb84d"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>' }}
+      />
+    </div>
+    <div className="web-card-content">
+      <h3>Suryamas Jaya Internasional</h3>
+      <div className="web-tech-stack">
+      </div>
+      <p className="web-description">OEM food manufacturer website — abon, gula aren, and other food products. BPOM, GMP, HACCP, Halal, NKV certified.</p>
+      <a href="https://suryamasjayainternasional.com" target="_blank" rel="noopener noreferrer" className="web-link">
+        View Project <span>→</span>
+      </a>
+    </div>
+  </div>
+
+  {/* Tambahan: Hidayah Sentosa Sejahtera */}
+  <div className="project-web-card">
+    <div className="web-card-icon">
+      <img
+        src="https://www.google.com/s2/favicons?domain=hidayahsentosasejahtera.com&sz=64"
+        alt="Hidayah Sentosa Sejahtera"
+        onError={(e) => { e.target.onerror = null; e.target.src = 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23ffb84d"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>' }}
+      />
+    </div>
+    <div className="web-card-content">
+      <h3>Hidayah Sentosa Sejahtera</h3>
+      <div className="web-tech-stack">
+      </div>
+      <p className="web-description">National company providing conveyor system products and solutions for various industrial sectors.</p>
+      <a href="https://hidayahsentosasejahtera.com" target="_blank" rel="noopener noreferrer" className="web-link">
+        View Project <span>→</span>
+      </a>
+    </div>
+  </div>
+</div>
         </div>
       </section>
 
@@ -555,13 +596,13 @@ function App() {
           <div className="contact-content">
             <div className="contact-info">
               <p className="contact-label">Email me:</p>
-              <h3 className="contact-info-text">pakpahanamsal1@gmail.com</h3>
+              <h3 className="contact-info-text">pakpahanamsal@gmail.com</h3>
               <p className="contact-label">Follow me:</p>
               <div className="contact-social-icons">
                 <div className="contact-social-icons">
                   <a className="contact-social-btn" href="https://www.instagram.com/amsal_paruhum?igsh=MW5lN25rbjA2NWVtMA==" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
                   <a className="contact-social-btn" href="https://github.com/Amsalpakpahan03" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-                  <a className="contact-social-btn" href="mailto:pakpahanamsal1@gmail.com"><FaEnvelope /></a>
+                  <a className="contact-social-btn" href="mailto:pakpahanamsal@gmail.com"><FaEnvelope /></a>
                 </div>
               </div>
             </div>
@@ -597,7 +638,7 @@ function App() {
             <div className="footer-social">
               <a href="https://www.instagram.com/amsal_paruhum?igsh=MW5lN25rbjA2NWVtMA==" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
               <a href="https://github.com/Amsalpakpahan03" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-              <a href="mailto:pakpahanamsal1@gmail.com"><FaEnvelope /></a>
+              <a href="mailto:pakpahanamsal@gmail.com"><FaEnvelope /></a>
             </div>
           </div>
           <p className="footer-text">Amsal Pakpahan {new Date().getFullYear()}</p>
