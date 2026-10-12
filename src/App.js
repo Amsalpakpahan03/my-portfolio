@@ -330,6 +330,21 @@ function App() {
               </div>
             </div>
           </div>
+          {/* Academic & Organization Experience */}
+<div className="internship-experience">
+  <h3 className="experience-title">Academic & Organization Experience</h3>
+  <div className="internship-card">
+    <div className="internship-header">
+      <h4>Faculty of Information Technology — UKSW</h4>
+    </div>
+    <ul className="experience-items" style={{ marginTop: '12px' }}>
+      <li>✓ <strong>Teaching Assistant – Web Service:</strong> Guided practicum for 4 parallel classes (±100+ students), explained API design concepts, and helped evaluate student assignments.</li>
+      <li>✓ <strong>Teaching Assistant – Software Engineering (RPL):</strong> Assisted students during team-based software development practicum, guided UML diagram usage, and gave feedback on project progress reports.</li>
+      <li>✓ <strong>Publication & Documentation Coordinator:</strong> Garda-SW Launch (2024), LDKM IFTI UKSW (2024 & 2025).</li>
+      <li>✓ <strong>Publication & Documentation Team:</strong> FTI Fun Week (2024), Unconference FTI UKSW (2024), Restart (2024), Spirit of Life (2024), Gebyar Sabda dan Seni (2024).</li>
+    </ul>
+  </div>
+</div>
         </div>
       </section>
       {/* PROJECT Section */}
